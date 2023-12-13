@@ -1,0 +1,45 @@
+.navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1b1f37;
+    transition: all .2s linear;
+}
+
+.list li a:hover {
+    color: #901313;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #901313;
+}

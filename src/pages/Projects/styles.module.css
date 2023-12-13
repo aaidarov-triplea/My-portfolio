@@ -1,0 +1,15 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.projects_items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    color: #1b1f37;
+}
