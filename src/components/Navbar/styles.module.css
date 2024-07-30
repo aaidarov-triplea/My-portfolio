@@ -1,9 +1,5 @@
 .navbar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 20px 0 20px;
 }
 
 .wrapper {
@@ -34,12 +30,53 @@
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    color: #1b1f37;
+    color: #fff;
     transition: all .2s linear;
 }
 
 .list li a:hover {
     color: #901313;
     padding-bottom: 5px;
-    border-bottom: 1px solid #901313;
+    border-bottom: 1px solid #fff;
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+}
+
+.menuIcon span {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin: 5px auto;
+    transition: all .3s linear;
+}
+
+.list.active {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    /* text-align: center; */
+}
+
+@media (max-width: 768px) {
+    .list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 25px;
+    }
 }

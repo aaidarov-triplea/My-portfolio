@@ -1,21 +1,20 @@
-import { saveAs } from "file-saver"
+import { saveAs } from "file-saver";
 //file
-import CV from '../../assets/cv.pdf'
+import CV from "../../assets/cv.pdf";
 //styles
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 import {
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoFacebook,
-} from "react-icons/io5"
+} from "react-icons/io5";
 
 const Home = () => {
-
   const handleDownloadClick = () => {
-    saveAs(CV, "Aidarov_CV.pdf")
-  }
+    saveAs(CV, "Aidarov_CV.pdf");
+  };
 
   return (
     <section className={styles.content}>
@@ -23,7 +22,7 @@ const Home = () => {
         <div className={styles.info}>
           <h1 className={styles.info_title}>Hi, I{"'"}m Akzhol</h1>
           <div className={styles.animate_text}>
-            <h1>Frontend Development.</h1>
+            <h1>Frontend Developer.</h1>
           </div>
           <div className={styles.socials}>
             <a
@@ -72,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home
+export default Home;

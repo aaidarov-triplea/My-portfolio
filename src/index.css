@@ -10,10 +10,16 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
+    padding: 0 20px;
 }
 
 .wrapper {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
 }

@@ -1,33 +1,22 @@
-.sidebar {
-    width: 30%;
-}
-
 .blue_bg_outer {
     background-color: #1b1f37;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 }
 
-.white_bg {
-    border: 20px solid #1b1f37;
-    border-radius: 50%;
-
-    position: relative;
-    top: 30%;
-    left: 50%;
-
-}
 
 .blue_bg {
-    background-color: #1b1f37;
+    background-color: #fff;
     border-radius: 50%;
-    height: 300px;
+    height: 200px;
+    width: 200px;
 
     position: relative;
-    top: 0;
-    left: 0;
-    border: 20px solid #fff;
+    bottom: -80px;
+    left: 50%;
+    translate: -50%;
+    border: 20px solid #1b1f37;
 }
 
 .avatar {
@@ -39,4 +28,14 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blue_bg_outer {
+        height: 100%;
+    }
+    .blue_bg {
+        left: 28%;
+    }
 }
